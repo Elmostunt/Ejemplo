@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/encabezados.css">
+    <title>Chantam.com</title>
+</head>
+
+
+
+<header>
+    <div class="logo"><img class="logo" src="css/bestlogo.jpg"></div>
+    <div class="menudiv">
+        <ul class="listamenu">
+<div class="dropdown">
+            <li>
+                    
+                <pre><strong><a href="encabezados2.html" 
+                    style="text-decoration:none">Vuelos 
+y Destinos</a></strong></pre>
+<div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+</div>
+</div>        
+            </li>
+            
+            <li>
+<div class="divbutton">
+    <pre>Hoteles, autos
+y paquetes</pre>
+    <div class="dropdown-content2">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+</div>   
+            </li>
+
+            <li>
+                <pre>Administra
+tu viaje</pre>
+        <div class="dropdown-content3">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+            </li>
+            <li>
+                <pre>Información para 
+tu viaje</pre>
+<div class="dropdown-content4">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+</div>
+            </li>
+            <li>
+                <pre>LATAM Pasa</pre>
+                <div class="dropdown-content5">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<body style="background-color:#1B0088;">
+
+    <div class="carousel">
+        <img class="mySlides" src="img/ciudades/antofa.jpg">
+        <img class="mySlides" src="img/ciudades/buenosaires.jpg">
+        <img class="mySlides" src="img/ciudades/conce.jpg" >
+        <img class="mySlides" src="img/ciudades/rio.jpg" >
+        <img class="mySlides" src="img/ciudades/stgo.jpg">
+    </div>
+
+    <div class="carousel">
+
+    </div>
+
+
+    <h1>Vuela por chile y el mundo con las tarifas de LATAM</h1>
+
+    <div id="parent">
+        <form id="formsell"action="/action_page.php">
+            <fieldset>
+                <legend>Reserva tu vuelo</legend>
+
+                <span style="display:inline-block">
+                    <label for=bar style="display:block">Origen: </label>
+                    <input type="text" name="origen" placeholder="Destino">
+                </span>
+                <span style="display:inline-block">
+                    <label for=bar style="display:block">Destino</label>
+                    <input type="text" name="destino" placeholder="Destino">
+                </span><br>
+                <span style="display:inline-block">
+                    <input type="radio"> Ida y vuelta
+                    <input type="radio"> Solo ida
+                </span> <br>
+                <span style="display:inline-block">
+                    <label for=asd style="display:block">Ida: </label>
+                    <input type="date" name="ida">
+                </span>
+                <span style="display:inline-block">
+                    <label for=bar style="display:block">Vuelta: </label>
+                    <input type="date" name="vuelta">
+                </span> <br>
+                <span style="display:inline-block">
+                    <label for=bar style="display:block">Pasajeros: </label>
+                    <input type="date" name="vuelta">
+                </span>
+                <span style="display:inline-block">
+                    <label for=bar style="display:block">Cabina: </label>
+                    <input type="date" name="vuelta">
+                </span>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+﻿body {
+  background-image: url("images/marcha.jpg");
+}
+
+h1 {
+  color: blue;
+  margin-left: 100px;
+}
+
+h2{
+color:Tomato;
+}
+
+.intro {
+    color: green;
+    font-weight: italic;
+}
+
+  ul.a {
+    list-style-type: circle;
+  }
+
+  ul.b {
+    list-style-type: square;
+  }
+
+  ol.c {
+    list-style-type: upper-roman;
+  }
+
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+  
+  table, th, td {
+  border: 1px solid black;
+}
+
+span {
+  display: block;
+}
+
+
